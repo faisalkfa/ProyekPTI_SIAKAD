@@ -54,11 +54,11 @@ https://siakadsmpn35bandarlampung.id
 ---
 
 Dikembangkan dengan 💖 oleh Tim SIXTH:
-Aqsal Yazid Setiawan - 120140197 (Project Manager / QA)
-Faisal Khairul Fasha - 120140158 (Back-End Developer)
-Faustine Elvaretta Tambila -	120140157	(Technical Writer)
-Winda - 120140123	(System Analyst)
-Azka Hafidz Asianto -	120140201	(Front-End Developer)
-Chaterine Sidabutar -	120140199 (Technical Writer)
-Muhammad Alhafiz - 120140108 (Front-End Developer)
-Andre Riantasa Wijaya	- 120140166	(UI/UX Designer)
+1. Aqsal Yazid Setiawan - 120140197 (Project Manager / QA)
+2. Faisal Khairul Fasha - 120140158 (Back-End Developer)
+3. Faustine Elvaretta Tambila -	120140157	(Technical Writer)
+4. Winda - 120140123	(System Analyst)
+5. Azka Hafidz Asianto -	120140201	(Front-End Developer)
+6. Chaterine Sidabutar -	120140199 (Technical Writer)
+7. Muhammad Alhafiz - 120140108 (Front-End Developer)
+8. Andre Riantasa Wijaya	- 120140166	(UI/UX Designer)
