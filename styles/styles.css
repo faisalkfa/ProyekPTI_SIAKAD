@@ -1,0 +1,1100 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+/* page*/
+/* Apply styles to the body element for background color */
+body {
+  font-family: Poppins;
+  display: flex;
+  align-items: center; /* Center vertically */
+  width: 100vw; /* 100% of viewport width */
+  height: 100vh; /* 100% of viewport height */
+  margin: 0;
+  overflow: hidden; /* Prevent body overflow */
+}
+
+/* Style the left half of the screen as a red rectangle */
+.left-half {
+  flex: 1; /* Occupy half of the screen width */
+  height: 100%; /* Full height of the screen */
+  position: relative; /* Position for pseudo-element */
+  background-image: url("../assets/BackgroundSMPN35.jpg"); /* Replace with your image file's name and extension */
+  background-size: cover; /* Scale the image to cover the entire div */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-position: center; /* Center the background image horizontally and vertically */
+}
+
+/* Style the top-left container */
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align the content to the top and left */
+  top: 20px; /* Add some top margin */
+  left: 30px; /* Add some left margin */
+}
+
+.top-left img,
+.top-left h1 {
+  height: auto;
+  vertical-align: middle;
+  margin-right: 10px; /* Adjust the spacing between the logo and text */
+}
+
+/* Style the text */
+.top-left h1 {
+  color: #fff;
+  font-family: Poppins; /* Use a backup font family */
+  font-size: 27px; /* Reduce the font size */
+  font-weight: 550;
+  line-height: normal;
+}
+
+/* Add a black overlay */
+.left-half::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the last value (0.5) for the opacity level */
+}
+
+/* Style the right half of the screen with the login form */
+.right-half {
+  flex: 1; /* Occupy half of the screen width */
+  height: 100%; /* Full height of the screen */
+  display: flex;
+  flex-direction: column; /* Align content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+}
+
+/* Style the login container */
+.login-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Fill the container height */
+}
+p {
+  color: black;
+}
+/* Style the login text (h1) */
+.login-container h1 {
+  color: #000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Poppins; /* Use a backup font family */
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 20px; /* Add some spacing between the h1 and inputs */
+}
+
+/* Style the username and password input boxes */
+input[type="text"],
+input[type="password"] {
+  width: 70vh;
+  height: 6vh;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  background: #c6d8af;
+  padding: 10px;
+  font-weight: 500;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: Medium;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none; /* Add some spacing between the inputs */
+}
+
+/* Style the login button and remove the border */
+button[type="submit"] {
+  width: 500px;
+  height: 7vh;
+  border-radius: 10px;
+  background-color: #cff59f; /* Adjust top margin */
+  cursor: pointer;
+  text-align: center;
+  font-size: 20px;
+  font-style: Medium;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  border: none;
+  margin-top: 45px;
+}
+button[type="submit"]:hover {
+  width: 500px;
+  height: 7vh;
+  border-radius: 10px;
+  background-color: #cff57a;
+  /* Adjust top margin */
+  cursor: pointer;
+  text-align: center;
+  font-size: 20px;
+  font-style: Medium;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+  border: none;
+  margin-top: 45px;
+}
+.atas {
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  width: 75vh;
+  border-bottom: solid 1px #000;
+  padding: 10px;
+}
+.atas2 {
+  padding-left: 10px;
+  font-weight: 700;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: Medium;
+  line-height: normal;
+}
+
+#username:focus,
+#password:focus {
+  outline: none; /* Hilangkan outline (border) saat input mendapatkan fokus */
+}
+
+.bawah {
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  width: 75vh;
+  padding-bottom: 20px;
+}
+
+.bawah2 {
+  padding-left: 10px;
+  font-weight: 700;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: Medium;
+  line-height: normal;
+}
+
+.atasbawah {
+  display: flex;
+  flex-direction: column;
+  width: 75vh;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+footer {
+  font-family: Poppins;
+  font-weight: 700;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: #000;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/*Dashboard Siswa*/
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 105px;
+  background-color: #c6d8af;
+  color: #fff;
+  text-align: left;
+  border-bottom: 2px solid #000;
+}
+
+header h1 {
+  position: absolute;
+  left: 180px;
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 700; /* Bold font weight for "SIAKAD" */
+  color: #000;
+}
+
+header span {
+  position: absolute;
+  top: 62px;
+  left: 180px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 300; /* Normal font weight for the rest of the text */
+  font-style: italic; /* Italic font style for "SMP Negeri 35 Bandar Lampung" */
+  color: #000;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 87px;
+  top: 14px;
+}
+
+.title-text h1 {
+  top: 20px;
+}
+
+.logout-button {
+  position: fixed;
+  top: 35px;
+  right: 94px;
+}
+
+.logout-button:hover {
+  position: fixed;
+  top: 35px;
+  right: 94px;
+}
+
+.profile-button {
+  position: fixed;
+  top: 35px;
+  right: 256px;
+}
+
+.logout-button a,
+.profile-button a {
+  text-decoration: none; /* Hapus dekorasi tautan (default) */
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+}
+
+nav {
+  position: fixed;
+  top: 105px; /* Sesuaikan dengan tinggi header */
+  left: 0;
+  width: 370px;
+  height: calc(100% - 175px);
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.side-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Menghilangkan margin antar elemen li */
+}
+
+.side-menu li {
+  margin-bottom: 0; /* Menghilangkan margin bawah pada elemen li */
+}
+
+.side-menu a {
+  display: block;
+  width: 370px;
+  height: 70px;
+  background-color: #d9d9d9;
+  line-height: 70px;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  border-left: 2px solid #000;
+}
+
+.side-menu a:hover {
+  background-color: #cff59f;
+}
+
+.side-menu a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  padding: 5px 0; /* Atur jarak atas dan bawah */
+}
+
+.side-menu img,
+.side-menu span {
+  width: 24px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+  height: 24px;
+  margin-right: 10px; /* Tambahkan margin dari sisi kanan */
+  margin-left: 10px; /* Tambahkan margin dari sisi kiri */
+}
+
+.side-menu .active {
+  background-color: #cff59f; /* Warna latar belakang yang berbeda untuk menu aktif */
+}
+
+.menu-disabled {
+  display: flex;
+  width: 370px;
+  height: 70px;
+  background-color: #c6d8af;
+  text-align: center;
+  line-height: 70px;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  pointer-events: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  border-left: 2px solid #000;
+}
+
+.menu-end {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: 2px solid #000;
+}
+
+.kotak-isi {
+  position: fixed;
+  top: 135px;
+  left: 415px;
+  right: 15px;
+  bottom: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid #000;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.kelas-box {
+  position: fixed;
+  top: 150px;
+  left: 546px;
+  width: 318px;
+  height: 135px;
+  background-color: #f3f3f3e8;
+  color: #000;
+  margin-right: 20px; /* Menambahkan jarak antara kotak-kelas dan kotak-nilai */
+  display: inline-block; /* Menjadikan kotak-kelas tampil berdampingan */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 2px solid #000;
+}
+
+.nilai-box {
+  position: fixed;
+  top: 150px;
+  left: 1010px;
+  width: 318px;
+  height: 135px;
+  background-color: #f3f3f3e8;
+  color: #000;
+  display: inline-block; /* Menjadikan kotak-nilai tampil berdampingan */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 2px solid #000;
+}
+.kelas-box h1,
+.nilai-box h1 {
+  font-family: Poppins;
+  font-size: 20px;
+  line-height: 35px;
+  margin-left: 20px;
+}
+
+.kelas-box span,
+.nilai-box span {
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 500px;
+  margin-left: 20px;
+  line-height: 0px;
+}
+
+.kotak-hijau-kelas {
+  position: fixed;
+  top: 150px;
+  left: 475px;
+  width: 71px;
+  height: 135px;
+  background-color: #c6d8af; /* Warna hijau */
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 2px solid #000; /* Border hitam sekeliling kotak */
+}
+
+.kotak-hijau-nilai-rata-rata {
+  position: fixed;
+  top: 150px;
+  left: 939px;
+  width: 71px;
+  height: 135px;
+  background-color: #c6d8af; /* Warna hijau */
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 2px solid #000; /* Border hitam sekeliling kotak */
+}
+
+.data-diri-dashboard::before {
+  font-family: Poppins;
+  content: "Data Diri";
+  position: absolute;
+  top: -37px; /* Atur jarak atas teks dari kotak */
+  left: -5px; /* Atur jarak kiri teks dari kotak */
+  padding: 5px; /* Berikan sedikit ruang di sekitar teks */
+  font-size: 20px;
+  font-weight: 700;
+}
+.data-diri-dashboard {
+  position: fixed;
+  margin-top: 10px;
+  top: 315px; /* Tetapkan posisi vertikal */
+  left: 475px; /* Tetapkan posisi horizontal */
+  width: 809px; /* Tetapkan lebar */
+  height: 200px; /* Tetapkan tinggi */
+  border: 2px solid #000; /* Border hitam sekeliling kotak */
+  display: flex;
+  padding: 20px; /* Tambahkan padding sekitar kotak */
+  border-radius: 10px;
+}
+
+.column {
+  flex: 1; /* Kolom akan mengambil setengah lebar kotak data-diri-dashboard */
+  padding: 5px; /* Ruang di sekitar setiap item */
+}
+
+.data-item {
+  font-family: Poppins;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  width: 337px;
+  height: 35px;
+  color: #000;
+  margin: 5px 0; /* Jarak antara setiap item */
+  border-bottom: 2px solid #000;
+}
+.data-item-edit {
+  font-family: Poppins;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  width: 337px;
+  height: 58px;
+  color: #000;
+  margin: 5px 0;
+  /* Jarak antara setiap item */
+  border-bottom: 2px solid #000;
+}
+
+.data-item span {
+  font-family: Poppins;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #000;
+}
+
+/* Dashboard Guru*/
+
+.jumlah-kelas-box {
+  position: fixed;
+  top: 281px;
+  left: 546px;
+  width: 318px;
+  height: 135px;
+  background-color: #f3f3f3e8;
+  color: #000;
+  margin-right: 20px; /* Menambahkan jarak antara kotak-kelas dan kotak-nilai */
+  display: inline-block; /* Menjadikan kotak-kelas tampil berdampingan */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 2px solid #000;
+}
+
+.jumlah-siswa-box {
+  position: fixed;
+  top: 281px;
+  left: 1010px;
+  width: 318px;
+  height: 135px;
+  background-color: #f3f3f3e8;
+  color: #000;
+  display: inline-block; /* Menjadikan kotak-nilai tampil berdampingan */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 2px solid #000;
+}
+
+.wali-kelas-box {
+  position: fixed;
+  top: 281px;
+  left: 1474px;
+  width: 318px;
+  height: 135px;
+  background-color: #f3f3f3e8;
+  color: #000;
+  display: inline-block; /* Menjadikan kotak-nilai tampil berdampingan */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 2px solid #000;
+}
+
+.jumlah-kelas-box h1,
+.jumlah-siswa-box h1,
+.wali-kelas-box h1 {
+  font-family: Poppins;
+  font-size: 20px;
+  line-height: 50px;
+  margin-left: 20px;
+}
+
+.jumlah-kelas-box span,
+.jumlah-siswa-box span,
+.wali-kelas-box span {
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 500px;
+  margin-left: 20px;
+  line-height: 10px;
+}
+
+.kotak-hijau-jumlah-kelas {
+  position: fixed;
+  top: 281px;
+  left: 475px;
+  width: 71px;
+  height: 135px;
+  background-color: #c6d8af; /* Warna hijau */
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 2px solid #000; /* Border hitam sekeliling kotak */
+}
+
+.kotak-hijau-jumlah-siswa {
+  position: fixed;
+  top: 281px;
+  left: 939px;
+  width: 71px;
+  height: 135px;
+  background-color: #c6d8af; /* Warna hijau */
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 2px solid #000; /* Border hitam sekeliling kotak */
+}
+
+.kotak-hijau-wali-kelas {
+  position: fixed;
+  top: 281px;
+  left: 1403px;
+  width: 71px;
+  height: 135px;
+  background-color: #c6d8af; /* Warna hijau */
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 2px solid #000; /* Border hitam sekeliling kotak */
+}
+
+/*Profile-Guru*/
+
+.kotak-isi-profile {
+  position: fixed;
+  top: 125px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid #000;
+  padding: 20px;
+}
+
+.data-diri-profile::before {
+  font-family: Poppins;
+  content: "Data Diri";
+  position: absolute;
+  top: -30px; /* Atur jarak atas teks dari kotak */
+  left: -5px; /* Atur jarak kiri teks dari kotak */
+  padding: 5px; /* Berikan sedikit ruang di sekitar teks */
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.data-alamat-profile::before {
+  font-family: Poppins;
+  content: "Alamat";
+  position: absolute;
+  top: -30px; /* Atur jarak atas teks dari kotak */
+  left: -5px; /* Atur jarak kiri teks dari kotak */
+  padding: 5px; /* Berikan sedikit ruang di sekitar teks */
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.data-diri-profile {
+  position: fixed;
+  top: 165px; /* Tetapkan posisi vertikal */
+  left: 350px; /* Atur posisi horizontal ke tengah */
+  width: 66vw; /* Lebar sebagai persentase dari lebar viewport */
+  height: 350px; /* Tetapkan tinggi */
+  border: 2px solid #000; /* Border hitam sekeliling kotak */
+  display: flex;
+  padding: 20px; /* Tambahkan padding sekitar kotak */
+}
+
+.data-diri-profile-edit {
+  position: fixed;
+  top: 105px;
+  /* Tetapkan posisi vertikal */
+  left: 350px;
+  /* Atur posisi horizontal ke tengah */
+  width: 66vw;
+  /* Lebar sebagai persentase dari lebar viewport */
+  height: 420px;
+  /* Tetapkan tinggi */
+  border: 2px solid #000;
+  /* Border hitam sekeliling kotak */
+  display: flex;
+  padding: 20px;
+  /* Tambahkan padding sekitar kotak */
+}
+
+.data-alamat-profile {
+  position: fixed;
+  top: 605px; /* Tetapkan posisi vertikal */
+  left: 160px; /* Atur posisi horizontal ke tengah */
+  width: 85vw; /* Lebar sebagai persentase dari lebar viewport */
+  height: 30px; /* Tetapkan tinggi */
+  border: 2px solid #000; /* Border hitam sekeliling kotak */
+  display: flex;
+  padding: 20px; /* Tambahkan padding sekitar kotak */
+}
+
+.profile-picture img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#edit-button {
+  font-family: Poppins;
+  font-weight: 700;
+  position: fixed;
+  bottom: 20px;
+  right: 70px;
+  width: 70px;
+  height: 36px;
+  cursor: pointer;
+  border: none;
+  background-color: #c6d8af;
+  color: #000;
+  border-radius: 5px;
+  border: 2px solid #000;
+}
+.edit-profile-buttons a {
+  text-decoration: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+#edit-button:hover {
+  font-family: Poppins;
+  font-weight: 700;
+  position: fixed;
+  bottom: 20px;
+  right: 70px;
+  width: 70px;
+  height: 36px;
+  cursor: pointer;
+  border: none;
+  background-color: #c6d8df;
+  color: #000;
+  border-radius: 5px;
+  border: 2px solid #000;
+}
+
+#save-button {
+  font-family: Poppins;
+  font-weight: 700;
+  position: fixed;
+  bottom: 60px;
+  right: 225px;
+  width: 70px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  background-color: #c6d8af;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 2px solid #000;
+}
+
+.data-item input {
+  font-family: Poppins;
+  border: 2px solid #000; /* Atur border input */
+  padding: 1px; /* Atur padding input */
+  width: 100%; /* Atur lebar input */
+  border-radius: 5px; /* Atur border-radius input */
+  font-size: 16px; /* Atur ukuran font input */
+}
+.data-item-edit input {
+  font-family: Poppins;
+  padding: 0px 5px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.profile-picture {
+  position: fixed;
+  top: 165px;
+  left: 55px;
+  width: 240px; /* Lebar yang ditetapkan */
+  height: 300px; /* Tinggi yang ditetapkan */
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  overflow: hidden; /* Mengatasi gambar yang terlalu besar */
+}
+
+.profile-picture img {
+  width: 100%; /* Lebar gambar diisi 100% dari kotak parent */
+  height: 100%; /* Tinggi gambar diisi 100% dari kotak parent */
+  object-fit: cover; /* Memastikan gambar diisi sesuai dengan lebar dan tinggi tanpa merubah rasio aspek */
+}
+
+.data-item input {
+  font-family: Poppins;
+  border: none;
+  padding: 1px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 20px;
+  outline: none;
+}
+
+.data-item-edit label {
+  font-size: 15px;
+}
+
+.data-item input:focus {
+  background-color: #f0f0f0; /* Ganti dengan warna yang Anda inginkan */
+}
+
+/* Style for the form */
+.form-edit-profil {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: white;
+  overflow-y: auto;
+}
+
+/* Style for form groups */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Style for labels */
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Style for input fields */
+.form-group input[type="text"],
+.form-group input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Style for dropdown */
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  background-color: #c6d8af;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Style for submit button */
+.form-group input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Style for the form */
+.form-inputnilai {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.form-group input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #c6d8af;
+}
+
+.form-edit-modul {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin-left: 20px; /* Adjust the margin as needed */
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.text-end select {
+  background-color: #c6d8af;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Style untuk layar dengan lebar maksimum 767px (perangkat mobile) */
+@media only screen and (max-width: 800px) {
+  body {
+    overflow: scroll; /* Prevent body overflow */
+  }
+  header {
+    z-index: 1;
+  }
+  header h1 {
+    left: 100px;
+    font-size: 16px;
+  }
+
+  header span {
+    left: 100px;
+    top: 40px;
+    font-size: 12px;
+  }
+
+  .logo-text {
+    left: 20px;
+  }
+  .logo-text img {
+    height: 75px;
+    width: 75px;
+  }
+
+  .logout-button {
+    top: 45px;
+    right: 30px;
+  }
+
+  .logout-button:hover {
+    top: 45px;
+    right: 30px;
+  }
+
+  .profile-button {
+    position: relative;
+    top: 45px;
+    left: 80px;
+  }
+
+  .logout-button a,
+  .profile-button a {
+    text-decoration: none; /* Hapus dekorasi tautan (default) */
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 12px;
+    color: #000;
+  }
+  nav {
+    position: absolute;
+    padding: 0;
+    margin: 0px;
+    width: 100%;
+  }
+  .side-menu a {
+    font-size: 12px;
+    height: 35px;
+    width: 100%;
+  }
+
+  .side-menu img,
+  .side-menu span {
+    width: 12px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    height: 12px;
+  }
+
+  .menu-disabled {
+    line-height: 35px;
+    font-size: 12px;
+    height: 35px;
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top: 0px solid #000;
+  }
+
+  .menu-end {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .kotak-isi {
+    position: relative;
+    top: 310px;
+    left: 0px;
+    width: 100%;
+    height: 75vh;
+    font-size: x-small;
+    overflow: scroll;
+  }
+
+  .kelas-box {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 200px;
+    transform: scale(0.5);
+  }
+
+  .nilai-box {
+    position: absolute;
+    top: 20px;
+    left: 175px;
+    width: 200px;
+    transform: scale(0.5);
+  }
+
+  .kotak-hijau-kelas,
+  .kot {
+    top: 20px;
+    position: absolute;
+    left: 30px;
+    transform: scale(0.5);
+  }
+  .kotak-hijau-nilai-rata-rata {
+    top: 20px;
+    position: absolute;
+    left: 175px;
+    transform: scale(0.5);
+  }
+
+  .data-diri-dashboard {
+    flex-direction: column;
+    position: absolute;
+    left: -10px;
+    top: 90px;
+    height: fit-content;
+    width: fit-content;
+    transform: scale(0.7);
+  }
+  
+  body .kotak-isi-profile{
+    overflow: hidden;
+  }
+  
+  .kotak-isi-profile {
+    height: 80vh;
+    z-index: 1;
+    overflow: scroll;
+  }
+  .profile-picture {
+    position: absolute;
+    top: -50px;
+    left: -30px;
+    transform: scale(0.6);
+  }
+  .data-diri-profile {
+    position: absolute;
+    flex-direction: column;
+    left: -40px;
+    top: 150px;
+    height: max-content;
+    width: max-content;
+    transform: scale(0.7);
+  }
+  #edit-button,
+  #edit-button:hover {
+    position: absolute;
+    bottom: 0px;
+    width: 200px;
+    right: 60px;
+  }
+  body .form-edit-profil {
+    top: 125px;
+  }
+  .form-edit-profil {
+    overflow: scroll;
+    position: absolute;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+  }
+  .form-edit-profil .profile-picture {
+    left: 0px;
+  }
+  .form-edit-profil .data-diri-profile-edit {
+    position: static;
+    width: auto;
+    height: auto;
+    margin-top: 150px;
+  }
+  .form-edit-profil #edit-button,
+  .form-edit-profil #edit-button:hover {
+    position: absolute;
+    bottom: 0px;
+    width: 200px;
+    right: 75px;
+  }
+}
